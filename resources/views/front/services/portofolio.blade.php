@@ -8,7 +8,7 @@
         <section id="services-header" class="py-4 mb-4">
             <div class="container">
                 <div class="row">
-                    <div class="title pt-3">
+                    <div class="title pt-3 mx-auto">
                         <h1 class="mb-2">{{ $service->title }}</h1>
                         <div class="title-underline-container">
                             <div class="title-underline w-100"></div>
