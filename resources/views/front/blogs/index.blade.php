@@ -1,5 +1,7 @@
 @extends('front.layout.main')
 
+@section('title', __('custom.blog'))
+
 @section('content')
 
     <section id="blog-header" class="py-2 pb-0">
