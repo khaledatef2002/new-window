@@ -7,7 +7,7 @@
 <form id="edit-website-settings-form" data-id="{{ $website_settings->id }}">
     <div class="position-relative mx-n4 mt-n4">
         <div class="profile-wid-bg profile-setting-img auto-image-show">
-            <img src="{{ asset($website_settings->cover) }}" class="profile-wid-img" alt="">
+            <img src="{{ $website_settings->display_cover }}" class="profile-wid-img" alt="">
             <div class="overlay-content">
                 <div class="text-end p-3">
                     {{-- @if (Auth::user()->hasPermissionTo('website_settings_edit')) --}}
@@ -29,7 +29,7 @@
                 <div class="card-body p-4">
                     <div class="text-center">
                         <div class="profile-user position-relative d-inline-block mx-auto auto-image-show mb-4">
-                            <img src="{{ asset($website_settings->logo) }}" class="rounded-circle avatar-xl img-thumbnail user-profile-image material-shadow" alt="user-profile-image">
+                            <img src="{{ $website_settings->display_logo }}" class="rounded-circle avatar-xl img-thumbnail user-profile-image material-shadow" alt="user-profile-image">
                             <div class="avatar-xs p-0 rounded-circle profile-photo-edit">
                                 <input id="profile-img-file-input" name="logo" type="file" class="profile-img-file-input">
                                 {{-- @if (Auth::user()->hasPermissionTo('website_settings_edit')) --}}
@@ -96,6 +96,13 @@
                                     <div class="mb-3">
                                         <label class="form-label" for="instagram_url">@lang('dashboard.instagram_url')</label>
                                         <input class="form-control" id="instagram_url" name="instagram_url" type="url" placeholder="@lang('dashboard.enter') @lang('dashboard.instagram_url')" value="{{ $website_settings->instagram_url }}">
+                                    </div>
+                                </div>
+                                <!--end col-->
+                                <div class="col-lg-12">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="linkedin_url">@lang('dashboard.linkedin_url')</label>
+                                        <input class="form-control" id="linkedin_url" name="linkedin_url" type="url" placeholder="@lang('dashboard.enter') @lang('dashboard.linkedin_url')" value="{{ $website_settings->linkedin_url }}">
                                     </div>
                                 </div>
                                 <!--end col-->

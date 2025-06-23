@@ -76,6 +76,7 @@ class WebsiteSettingsController extends Controller implements HasMiddleware
             'instagram_url' => ['required', 'url'],
             'twitter_url' => ['required', 'url'],
             'youtube_url' => ['required', 'url'],
+            'linkedin_url' => ['required', 'url'],
             'tiktok_url' => ['required', 'url'],
             'snapchat_url' => ['required', 'url'],
             'phone_number' => ['required', 'numeric', 'digits_between:7,13'],

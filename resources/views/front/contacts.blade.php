@@ -46,54 +46,56 @@
                         <div class="d-flex justify-content-center">
                             <p class="mb-0 fw-bold"><i class="fa-solid fa-phone"></i> @lang('custom.phone')</p>
                             <ul class="pe-3 d-flex gap-5" style="list-style:none;">
-                                <li><a href="tel:+966592945557" class="text-gr text-decoration-none"><bdi>0592945557</bdi></a></li>
-                                <li><a href="tel:+966592948084" class="text-gr text-decoration-none"><bdi>0592948084</bdi></a></li>
+                                <li><a href="tel:+966592945557" class="text-gr text-decoration-none"><bdi>{{ $website_settings->phone_number }}</bdi></a></li>
+                                @if ($website_settings->phone_number_2)
+                                    <li><a href="tel:+966592948084" class="text-gr text-decoration-none"><bdi>{{ $website_settings->phone_number_2 }}</bdi></a></li>
+                                @endif
                             </ul>
                         </div>
                         <div class="d-flex justify-content-center flex-wrap mb-3">
                             <p class="mb-0 fw-bold"><i class="fa-solid fa-envelope"></i> @lang('custom.email')&nbsp;</p>
-                            <span class="text-gr">info@windowadv.com</span>
+                            <span class="text-gr">{{ $website_settings->email }}</span>
                         </div>
                         <div class="d-flex justify-content-center flex-wrap mb-2">
                             <p class="ms-1 mb-0 fw-bold"><i class="fa-solid fa-location-dot"></i> @lang('custom.address')&nbsp;</p>
-                            <span class="text-gr">7589 شارع هارون الرشيد الفرعي، حي الفيحاء - الرياض 14252</span>
+                            <span class="text-gr">{{ $website_settings->location }}</span>
                         </div>
                     </div>
                     <div class="row mt-3 d-flex justify-content-center flex-wrap">
                         <p class="ms-1 text-center mb-1 fw-bold">@lang('custom.social')</p>
                         <ul class="d-flex gap-4 flex-wrap justify-content-center" style="list-style: none;">
                             <li>
-                                <a href="https://www.facebook.com/Window.adv">
+                                <a href="{{ $website_settings->facebook_url }}">
                                 <i class="fa-brands fa-square-facebook text-white fs-1"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/window_adv">
+                                <a href="{{ $website_settings->instagram_url }}">
                                 <i class="fa-brands fa-square-instagram text-white fs-1"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/in/windowadv">
+                                <a href="{{ $website_settings->linkedin_url }}">
                                 <i class="fab fa-linkedin text-white fs-1"></i>               
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.snapchat.com/add/window_adv">
+                                <a href="{{ $website_settings->snapchat_url }}">
                                 <i class="fab fa-snapchat-square fs-1 text-white"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.tiktok.com/@window_adv">
+                                <a href="{{ $website_settings->tiktok_url }}">
                                 <i class="fab fa-tiktok bg-white fs-1 rounded-2" style="color: #1f1f1f;"></i>                
                                 </a>
                             </li>
                             <li>
-                                <a href="https://x.com/Window_adv">
+                                <a href="{{ $website_settings->twitter_url }}">
                                 <i class="fa-brands fa-square-x-twitter text-white fs-1"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.youtube.com/@WindowAdv">
+                                <a href="{{ $website_settings->youtube_url }}">
                                 <i class="fa-brands fa-youtube text-white fs-1"></i>
                                 </a>
                             </li>
