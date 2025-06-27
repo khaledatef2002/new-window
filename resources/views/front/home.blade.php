@@ -21,7 +21,7 @@
                 </div>
                 <div class="col-lg-5 px-5 d-flex justify-content-center align-items-center gap-4">
                     <div>
-                        <img src='{{ asset('front/images/callcenter.png') }}' height="140">
+                        <img src='{{ asset('front/images/callcenter.png') }}' height="140" alt="@lang('custom.contact-us')">
                     </div>
                     <div>
                         <p class="header_about_warning fw-bold mb-0 fs-4">@lang('custom.contact-us')</p>
@@ -37,7 +37,7 @@
         <div class="container d-flex flex-md-row flex-column justify-content-evenly align-items-center gap-4 text-gr">
             <div class="d-flex align-items-center gap-3">
                 <div>
-                    <img src="{{ asset('front/images/clients_icon.png') }}" height="70">
+                    <img src="{{ asset('front/images/clients_icon.png') }}" height="70" alt="@lang('custom.clients')">
                 </div>
                 <div>
                     <p class="mb-0 fs-1"><span class="count-number">1000</span>+</p>
@@ -46,7 +46,7 @@
             </div>
             <div class="d-flex align-items-center gap-3">
                 <div>
-                    <img src="{{ asset('front/images/projects_icon.png') }}" height="70">
+                    <img src="{{ asset('front/images/projects_icon.png') }}" height="70" alt="@lang('custom.our-projects')">
                 </div>
                 <div>
                     <p class="mb-0 fs-1"><span class="count-number">3000</span>+</p>
@@ -55,7 +55,7 @@
             </div>
             <div class="d-flex align-items-center gap-3">
                 <div>
-                    <img src="{{ asset('front/images/vip_icon.png') }}" height="70">
+                    <img src="{{ asset('front/images/vip_icon.png') }}" height="70" alt="@lang('custom.vip-clients')">
                 </div>
                 <div>
                     <p class="mb-0 fs-1"><span class="count-number">200</span>+</p>
