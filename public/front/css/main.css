@@ -797,3 +797,14 @@ animation-direction: alternate;
 {
   display: none;
 }
+
+@media screen and (max-width: 992px) {
+  .navbar ul.navbar-nav {
+    position: relative !important;
+  }
+  div:has(> a > #lang-image) {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
