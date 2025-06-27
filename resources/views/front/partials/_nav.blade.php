@@ -37,11 +37,11 @@
             <div>
                 @if (LaravelLocalization::getCurrentLocale() == 'ar')
                     <a class="text-decoration-none" href="{{ LaravelLocalization::getLocalizedURL('en') }}">
-                        <img id="lang-image" src="{{ asset('front/images/English_language.png')}}" width="60" class="rounded-2">
+                        <img id="lang-image" src="{{ asset('front/images/English_language.png')}}" width="60" class="rounded-2" alt="En">
                     </a>  
                     @else
                     <a class="text-decoration-none" href="{{ LaravelLocalization::getLocalizedURL('ar') }}">
-                        <img id="lang-image" src="{{ asset('front/images/saudi.webp')}}" width="60" class="rounded-2">
+                        <img id="lang-image" src="{{ asset('front/images/saudi.webp')}}" width="60" class="rounded-2" alt="Ar">
                     </a>  
                 @endif
             </div>
