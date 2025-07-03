@@ -138,6 +138,18 @@
                                 {{-- Phone --}}
                                 <div class="col-lg-12">
                                     <div class="mb-3">
+                                        <label class="form-label" for="email">@lang('dashboard.email')</label>
+                                        <input class="form-control" id="email" name="email" type="email" placeholder="@lang('dashboard.enter') @lang('dashboard.email')" value="{{ $website_settings->email }}">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="location">@lang('dashboard.location')</label>
+                                        <textarea class="form-control" id="location" name="location" placeholder="@lang('dashboard.enter') @lang('dashboard.location')">{{ $website_settings->location }}</textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="mb-3">
                                         <label class="form-label" for="phone_number">@lang('dashboard.phone_number')</label>
                                         <input class="form-control" id="phone_number" name="phone_number" type="text" placeholder="@lang('dashboard.enter') @lang('dashboard.phone_number')" value="{{ $website_settings->phone_number }}">
                                     </div>
