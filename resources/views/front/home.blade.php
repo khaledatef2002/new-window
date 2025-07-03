@@ -183,8 +183,8 @@
                                 <p class="mb-0 fw-bold"><i class="fa-solid fa-phone ms-1"></i> @lang('custom.phone')</p>
                                 <ul class="pe-1 d-flex gap-4" style="list-style:none;">
                                     <li><a href="tel:+966592945557" target="_blank" class="text-gr text-decoration-none"><bdi>{{ $website_settings->phone_number }}</bdi></a></li>
-                                    @if($website_settings->phone_number_2)
-                                        <li><a href="tel:+966592948084" target="_blank" class="text-gr text-decoration-none"><bdi>{{ $website_settings->phone_number_2 }}</bdi></a></li>
+                                    @if($website_settings->phone_number2)
+                                        <li><a href="tel:+966592948084" target="_blank" class="text-gr text-decoration-none"><bdi>{{ $website_settings->phone_number2 }}</bdi></a></li>
                                     @endif
                                 </ul>
                             </div>
