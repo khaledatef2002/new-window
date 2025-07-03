@@ -91,12 +91,12 @@ class WebsiteSettingsController extends Controller implements HasMiddleware
             }
 
             $image = $request->file('logo');
-            $imagePath = 'website-settings/logo/' . uniqid() . '.webp';
+            $imagePath = 'website-settings/logo/' . uniqid() . '.jpg';
 
             $manager = new ImageManager(new GdDriver());
             $manager->read($image)
                     ->scale(height: 60)
-                    ->encode(new AutoEncoder('webp', quality: 75))
+                    ->encode(new AutoEncoder('jpg', quality: 75))
                     ->save('storage/' . $imagePath);
 
             $data['logo'] = $imagePath;
